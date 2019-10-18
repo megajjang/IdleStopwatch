@@ -1,0 +1,2 @@
+# IdleStopwatch
+prevent screen lock
