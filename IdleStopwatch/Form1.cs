@@ -96,7 +96,8 @@ namespace IdleStopwatch
             long dwTick = GetIdleTime() / 1000;
             Console.WriteLine(dwTick.ToString());
 
-            if(dwTick % 550 <= 1)
+            //if(dwTick % 550 <= 1)
+            if(dwTick % 60 == 1)
             {
                 Console.WriteLine("SetThreadExecutionState");
                 SetThreadExecutionState(EXECUTION_STATE.ES_CONTINUOUS | EXECUTION_STATE.ES_DISPLAY_REQUIRED);
